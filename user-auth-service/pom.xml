@@ -50,6 +50,21 @@
       <artifactId>spring-cloud-starter-config</artifactId>
     </dependency>
     <dependency>
+      <groupId>org.springframework.kafka</groupId>
+      <artifactId>spring-kafka</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-crypto</artifactId>
+    </dependency>
+    <!-- TODO(Phase 1): add JWT (io.jsonwebtoken:jjwt-*) and OAuth2 client
+         (org.springframework.boot:spring-boot-starter-oauth2-client) once
+         you're implementing the actual login flows. -->
+    <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <optional>true</optional>

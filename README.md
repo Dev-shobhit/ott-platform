@@ -5,10 +5,15 @@ An OTT streaming platform (Netflix/Hotstar/Prime Video-style) — Spring Boot mi
 ## Modules
 
 - `common-lib`, `eureka-server`, `config-server`, `api-gateway` — platform foundation
-- `user-auth-service`, `catalog-service`, `cms-admin-service`, `search-service`,
-  `subscription-billing-service`, `video-transcoding-service`, `streaming-playback-service`,
-  `notification-service`, `audit-log-service`, `analytics-service`, `recommendation-service`,
-  `review-rating-service` — business services
+- `user-auth-service` — identity & auth
+- `content-service` — catalog metadata, admin/CMS publishing, and search (merges the former
+  catalog, cms-admin, and search services)
+- `subscription-billing-service` — plans, subscriptions & payments
+- `media-service` — video transcoding pipeline and streaming playback (merges the former
+  video-transcoding and streaming-playback services)
+- `engagement-service` — notifications, audit log, analytics, recommendations, and reviews
+  (merges the former notification, audit-log, analytics, recommendation, and review-rating
+  services)
 
 ## Local dev infra
 
