@@ -21,9 +21,10 @@
   </properties>
 
   <!--
-    Phase 0 platform modules plus the folder/pom skeleton for all 12
-    business services. Each service builds as an empty Spring Boot app
-    until its own phase lands real logic in it (see the roadmap).
+    Phase 0 platform modules plus the folder/pom skeleton for 5
+    consolidated business services. Each service builds as an empty
+    Spring Boot app until its own phase lands real logic in it (see
+    the roadmap).
   -->
   <modules>
     <!-- Phase 0: foundations -->
@@ -35,24 +36,17 @@
     <!-- Phase 1: identity & auth -->
     <module>user-auth-service</module>
 
-    <!-- Phase 2: catalog & search -->
-    <module>catalog-service</module>
-    <module>cms-admin-service</module>
-    <module>search-service</module>
+    <!-- Phase 2: catalog, admin/CMS & search -->
+    <module>content-service</module>
 
     <!-- Phase 3: billing & payments -->
     <module>subscription-billing-service</module>
 
     <!-- Phase 4: video pipeline & playback -->
-    <module>video-transcoding-service</module>
-    <module>streaming-playback-service</module>
+    <module>media-service</module>
 
-    <!-- Phase 5: notifications, audit & analytics -->
-    <module>notification-service</module>
-    <module>audit-log-service</module>
-    <module>analytics-service</module>
-    <module>recommendation-service</module>
-    <module>review-rating-service</module>
+    <!-- Phase 5: notifications, audit, analytics, recommendations & reviews -->
+    <module>engagement-service</module>
   </modules>
 
   <dependencyManagement>
