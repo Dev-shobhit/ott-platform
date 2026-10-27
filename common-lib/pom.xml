@@ -16,11 +16,6 @@
   <description>Shared DTOs, exceptions, and utilities used across OTT platform microservices</description>
 
   <dependencies>
-    <!-- EnvironmentPostProcessor for Neon DATABASE_URL -->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot</artifactId>
-    </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
@@ -38,6 +33,7 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
+      <version>1.18.42</version>
       <optional>true</optional>
     </dependency>
       <dependency>
