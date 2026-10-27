@@ -15,6 +15,3 @@ target/
 *.log
 
 .DS_Store
-.neon
-node_modules/
-.env.local
