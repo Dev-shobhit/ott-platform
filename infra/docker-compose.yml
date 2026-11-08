@@ -87,6 +87,12 @@ services:
       timeout: 5s
       retries: 10
 
+  mailpit:
+    image: axllent/mailpit
+    container_name: ott-mailpit
+    ports:
+      - "1025:1025"   # SMTP, where the app sends mail
+      - "8025:8025"   # web UI, where you read it
 volumes:
   postgres-data:
   redis-data:
